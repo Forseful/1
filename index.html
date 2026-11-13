@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои желания</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .wish-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .wish-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 16px 20px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .wish-item:hover {
+      transform: translateY(-2px);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    .wish-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .wish-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      background: rgba(56, 189, 248, 0.15);
+    }
+
+    .wish-title {
+      font-size: 18px;
+      font-weight: 500;
+      color: #f1f5f9;
+    }
+
+    .wish-badge {
+      background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Мои желания</h1>
+    <ul class="wish-list">
+      <li class="wish-item">
+        <div class="wish-left">
+          <div class="wish-icon">🌙</div>
+          <span class="wish-title">Sleep</span>
+        </div>
+        <span class="wish-badge">1</span>
+      </li>
+
+      <li class="wish-item">
+        <div class="wish-left">
+          <div class="wish-icon">☀️</div>
+          <span class="wish-title">Get up</span>
+        </div>
+        <span class="wish-badge">2</span>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
